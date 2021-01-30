@@ -1,0 +1,347 @@
+<html>
+<head>
+ <title>contact form</title>    
+</head>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background: #fff;
+            background-size: cover;
+        }
+        header{
+            position: relative;
+            max-width: 1200px;
+            background: #a7a7a7;
+            margin: 15px auto;
+            border: 1px solid #333;
+            align-content: center;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            position: relative;
+            float: left;
+        }
+        nav ul li ul{
+            position: absolute;
+            left: 0;
+            top: 102%;
+            background: #a7a7a7;
+            display: none;
+        }
+        nav ul li ul li{
+            width: 150px;
+            border-bottom: 1px dotted #fff;
+            position: relative;
+        }
+        nav ul li:hover > ul{
+            display: block;
+            color: #fff;
+        }
+        nav ul ul ul{
+            top: 0;
+            left: 100%;
+        }
+        
+        nav ul li a{
+            display: block;
+            text-transform: capitalize;
+            text-decoration:none;
+            font-size: 12px;
+            line-height: 12px;
+            transition:0.1s;
+             color: #fff;
+            text-align: center;
+            padding: 15px 12px;
+        }
+        nav ul li a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .clear{
+            clear: both;
+        }
+        
+        img
+        {
+            width: 70px;
+            margin-left: 30px;
+        }
+        .al
+        {
+            width: 500px;
+        float: right;
+            margin: 10px auto;
+        }
+        .al a
+        {
+           text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin-left: 1px;
+            font-size: 12px;
+            background: #333;
+        }
+        #logo
+        {
+            width: 300px;
+            
+        }
+          .box40
+          {
+              width: 1200px;
+              margin: 5px auto;
+              
+          }
+        .active
+        {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+<body>
+      <div class="box40">
+            <a href="naac.pdf"><img src="NAAC_LOGO.png"></a>
+            <a href="nbacertificate.pdf"><img src="download.png"></a>
+            <a href="#" ><img src="images.png" id="logo"></a>
+            <div class="al">
+                <a href="https://balaji.winnou.net/">onedu</a>
+                <a href="practise1.php">admin login</a>    
+                <a href="lecturerhome.php">staff login</a>
+                <a href="studenthome.php">student login</a>
+            </div>
+      </div>
+      <header>
+           <div class="toggle"></div>
+           <nav>
+              <ul>
+                  <li><a href="index.php" >home</a></li>
+                  <li><a href="#">About</a>
+                      <ul>
+                            <li><a href="visionandmission.html">vision & mission</a></li>
+                            <li><a href="chairman.html">chairman</a></li>
+                            <li><a href="principal.html">principal</a></li>
+                            <li><a href="naac.pdf">naac</a></li>
+                            <li><a href="nbacertificate.pdf">nba</a></li>
+                      </ul>                  
+                  </li>
+
+                  <li><a href="naac.pdf">naac</a></li>
+                  <li><a href="nbacertificate.pdf">nba</a></li>
+                  <li><a href="#">Acardamics</a>
+                      <ul>
+                        <li><a href="csedep.php">CSE department</a></li>
+                        <li><a href="ecedep.html">ECE department</a></li>
+                        <li><a href="eeedep.html">EEE department</a></li>
+                        <li><a href="civildep.html">CIVIL department</a></li>
+                        <li><a href="mechdep.html">MECH department</a></li>
+                     </ul>                  
+                 </li>
+                  
+                  <li><a href="achievements.php">Achievements</a></li>
+                  <li><a href="viewingplacement.php">placements</a></li>
+                  <li><a href="contactus.html" class="active">contact us</a></li>
+                  <li><a href="lecturerachievements.php">Faculty Achievements</a></li>
+                  <li><a href="studentachievements.php">Student Achievements</a></li>
+
+               </ul>
+           </nav>
+           <div class="clear"></div>
+    </header><br><br>
+        
+        
+    <section>
+        <div class="imgnm">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="cse.jpg" style="width:100%">
+                    <div class="text">Caption One</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="basketball.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="download7204802.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="bits.jpg" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images%20(4).jpg" style="width:100%">
+                    <div class="text">Caption Five</div>
+                </div>
+            </div><br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>   
+            </div>
+        
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); 
+                }
+            </script>
+      </div>
+            
+      <article>
+            
+            <h1>Contact us</h1><br>
+            <p>If you face with any difficulties or if any page does not responded, then please contact us with the given below phone number or with our email address provided...... </p>
+           <address>
+           <h1>Phone : <span class="color">8897875813</span></h1>
+            <h1>E-Mail : <span class="color"><a href="">nagarajugovindhula@gmail.com</a></span></h1>
+           </address>
+       </article> 
+  </section><br>
+    
+</body>
+    <style>
+        article > h1
+        {
+            line-height: 40px;
+            font-size: 22px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        article > p
+        {
+            font-size: 22px;
+            font-family: serif;
+            line-height: 40px;
+        }
+        address{
+            line-height: 60px;
+        }
+        address > h1
+        {
+            font-size: 22px;
+        }
+        .color
+        {
+            color: green;
+        }
+        section{
+            width: 1200px;
+            height: 450px;
+            margin: 10px auto;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, sans-serif;
+        }
+        .mySlides{
+            display: none;
+            margin: 5px 45px;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .slideshow-container{
+            max-width: 700px;
+            position: relative;
+            margin: auto;
+            display: block;
+            z-index: -1;
+        }
+        .text{
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext{
+            color: #f2f2f2;
+            font-size: 18px;
+            padding: 8px 40px;
+            position: absolute;
+            top: 0;
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from{
+                opacity: .4
+            } 
+            to{
+                opacity: 1
+            }
+        }
+        @keyframes fade{
+            from{
+                opacity: .4
+            } 
+            to{
+                opacity: 1
+            }
+        }
+        @media only screen and (max-width: 300px){
+            .text {
+                font-size: 11px
+            }
+        }
+        .imgnm{
+            width: 700px;
+            height: 500px;
+            float: right;
+        }
+    </style>
+</html>
