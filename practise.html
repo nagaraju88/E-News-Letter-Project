@@ -1,0 +1,193 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive navigation bar</title>  
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background: #fff;
+            background-size: cover;
+        }
+        header{
+            position: relative;
+            max-width: 1600px;
+            background: #a7a7a7;
+            margin: 15px 75px;
+            align-content: center;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            list-style: none;
+        }
+        nav ul li ul{
+            position: absolute;
+            margin-left: 0px;
+            background: #a7a7a7;
+            display: none;
+        }
+        nav ul li ul li{
+            width: auto;
+            height: auto;
+            display: block;
+        }
+        nav ul li.active ul{
+            display: block;
+                        color: #fff;
+            opacity: 1;
+        }
+        nav ul li a{
+            position:relative;
+            display: block;
+            text-transform: uppercase;
+            text-decoration:none;
+            font-size: 15px;
+            line-height: 19px;
+            transition:0.1s;
+             color: #fff;
+            padding: 16.3px 13px;
+        }
+        nav ul li a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .clear{
+            clear: both;
+        }
+        @media(max-width:750px){
+            .toggle{
+                width: 30px;
+                height: 30px;
+                display:block;
+                float:right;
+                margin:10px;
+                cursor: pointer;
+            }
+            .toggle:before{
+                content: "\f0c9";
+                font-family:fontAwesome;
+                font-size: 24px;
+                text-align: center;
+                padding: 0px 5px;
+                line-height: 30px;
+            }
+            nav{
+                display: none;
+            }
+            nav.active{
+                width:100%;
+                display:block;
+            }
+            nav ul{
+                display:block;
+            }
+            nav.active ul li
+            {
+                text-align: center;
+                width:100%;
+                opacity: 1;
+            }
+            nav ul li.active ul{
+                position: relative;
+                opacity: 1;
+            }
+        }
+        img
+        {
+            width: 140px;
+            margin-left: 30px;
+        }
+        .al
+        {
+        float: right;
+            margin: 30px 70px;
+        }
+        .al a
+        {
+           text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            margin-left: 1px;
+            font-size: 22px;
+            background: #333;
+        }
+        #logo
+        {
+            width: 420px;
+            
+        }
+    </style>
+    <body><br>
+       <a href="#"><img src="NAAC_LOGO.png"></a>
+       <a href="#"><img src="download.png"></a>
+       <a href="#" ><img src="images.png" id="logo"></a>
+        <div class="al">
+        <a href="#">Alumini</a>
+        <a href="#">onedu</a>
+        <a href="practise1.php">admin login</a>
+        <a href="#">staff login</a>
+        <a href="#">student login</a>
+            </div>
+       <header>
+           <div class="toggle"></div>
+           <nav>
+              <ul>
+<li><a href="#">home</a></li>
+<li><a href="#">About</a>
+   <ul>
+    <li><a href="#">vision & mission</a></li>
+    <li><a href="#">chairman</a></li>
+    <li><a href="#">principal</a></li>
+    <li><a href="#">naac</a></li>
+   </ul>                  
+</li>
+<li><a href="#">acadamics</a>
+    <ul>
+<li><a href="#">Computer science and enginering</a></li>
+   <li><a href="#">electrical and computer engineering</a></li>
+   <li><a href="#">electrical and electronics enginering</a></li>
+   <li><a href="#">civil enginering</a></li>
+   <li><a href="#">mechanical enginering</a></li>
+    </ul>
+</li>
+<li><a href="#">naac</a></li>
+<li><a href="#">admisions</a>
+    <ul>
+     <li><a href="#">course</a></li>
+     <li><a href="#">fee structure</a></li>
+     <li><a href="#">for details</a></li>
+    </ul>                  
+</li>
+<li><a href="#">r & d</a></li>
+<li><a href="#">infrastructure</a></li>
+<li><a href="#">campus life</a></li>
+<li><a href="#">students</a></li>
+<li><a href="#">placements</a></li>
+<li><a href="#">contact us</a></li>
+
+               </ul>
+           </nav>
+           <div class="clear"></div>
+        </header><br><br>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+            $('ul li').click(function(){
+                 $(this).toggleClass('active');
+            }) 
+        })
+        </script>
+    </body>
+</html>

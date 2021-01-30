@@ -1,0 +1,283 @@
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive navigation bar</title>  
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+    <style>
+       *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background: #fff;
+            background-size: cover;
+        }
+        header{
+            position: relative;
+            max-width: 1200px;
+            background: #a7a7a7;
+            margin: 15px auto;
+            border: 1px solid #333;
+            align-content: center;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            position: relative;
+            float: left;
+        }
+        nav ul li ul{
+            position: absolute;
+            left: 0;
+            top: 102%;
+            background: #a7a7a7;
+            display: none;
+        }
+        nav ul li ul li{
+            width: 150px;
+            border-bottom: 1px dotted #fff;
+            position: relative;
+        }
+        nav ul li:hover > ul{
+            display: block;
+            color: #fff;
+        }
+        nav ul ul ul{
+            top: 0;
+            left: 100%;
+        }
+        
+        nav ul li a{
+            display: block;
+            text-transform: capitalize;
+            text-decoration:none;
+            font-size: 14px;
+            line-height: 12px;
+            transition:0.1s;
+             color: #fff;
+            text-align: center;
+            padding: 15px 12px;
+        }
+        nav ul li a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .clear{
+            clear: both;
+        }
+        
+        img
+        {
+            width: 70px;
+            margin-left: 30px;
+        }
+        .al
+        {
+        float: right;
+            margin: 10px 70px;
+        }
+        .al a
+        {
+           text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin-left: 1px;
+            font-size: 12px;
+            background: #333;
+        }
+        #logo
+        {
+            width: 300px;
+            
+        }
+        .box40
+        {
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+    </style>
+    <body><br>
+        <div class="box40">
+       <a href="naac.pdf"><img src="NAAC_LOGO.png"></a>
+       <a href="nbacertificate.pdf"><img src="download.png"></a>
+       <a href="#" ><img src="images.png" id="logo"></a>
+        <div class="al">
+        <a href="https://balaji.winnou.net/">onedu</a>
+        <a href="practise1.php">admin login</a>    
+        <a href="lecturerhome.php">staff login</a>
+        <a href="studenthome.php">student login</a>
+            </div>
+            </div>
+       <header>
+           <div class="toggle"></div>
+           <nav>
+              <ul>
+<li><a href="index.php">home</a></li>
+<li><a href="#" class="active">About</a>
+   <ul>
+    <li><a href="visionandmission.html">vision & mission</a></li>
+    <li><a href="chairman.html">chairman</a></li>
+    <li><a href="principal.html">principal</a></li>
+    <li><a href="naac.pdf">naac</a></li>
+       <li><a href="nbacertificate.pdf">nba</a></li>
+   </ul>                  
+</li>
+
+<li><a href="naac.pdf">naac</a></li>
+<li><a href="nbacertificate.pdf">nba</a></li> 
+
+<li><a href="achievements.php">Achievements</a></li>
+<li><a href="viewingplacement.php">placements</a></li>
+<li><a href="#">contact us</a></li>
+
+               </ul>
+           </nav>
+           <div class="clear"></div>
+        </header>
+        <section class="main">
+            <div class="img">
+             <img src="main2.jpg">
+            </div>
+            <div class="about">
+                <h1>About Us</h1>
+              <p>Education is all about creating an environment of academic freedom, where bright minds meet,discover and learn.
+<br>
+Balaji Institute of Technology & Science is the one of the best Engineering college in warangal district, popularly known as BITS, was established by Maheshwara Educational Society in 2001 at Laknepally Village near Narsampet beside Warangal-Narsampet Main Road in an area of 35 acres with an in take of 180.<br> The place is well connected by road and train and is only 20 minutes drive from Warangal. <br>Presently the college offers B.Tech courses in EEE, ME, ECE, CIVIL & CSE with an intake of 660 besides MBA with an intake of 60. </p>             
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="vision">
+        <div class="vision1">
+            <div class="img1">
+            <img src="Principal.jpg">
+                <p class="name">Dr. V.S.Hariharan<br></p>
+                </div>
+            <span class="orange">PRINCIPAL'S DESK</span><br>
+<p class="line">
+At Balaji Institute of Technology & Science, our focus is on providing engaging instruction that will help our students develop the skills needed to obtain mastery on the global academic indicators. Our Staff is committed to the achievement of our students. We are focused on becoming a highly effective school that aligns Planning, instruction, assessment, and support geared towards the successful performance of our students. In this era of cut throat competition, it is of paramount importance to impart an integrated education to the future citizens of the Nation for successfully facing multitasking. The Balaji Institute of Technology & Science, therefore, lay special emphasis on both co-curricular and extra-curricular activities providing students an edge over others to be a leader in their respective field of activity. The wheel would also be a true reflection of all these diverse achievements and progresses made and being made by the school in fulfilling the coveted goal of imparting disciplined and quality education.
+
+
+As a staff we have devoted ourselves to working collaboratively and expanding opportunities for our students and each other. We at BITS, Narsampet work together to prepare a diverse community of students to become productive citizens and future leaders.
+
+
+Our journey for exCellence continues all the time and every time. Join us in the journey for exCellence. Let you empower yourself with the Wings of Knowledge and Power of Innovation and with this Empowerment imbibe an attitude akin to a positive and proactive thinking, an eagerness to serve and excel in your chosen domain of activity throughout your lifetime.
+
+
+I wish you a very happy and academically highly rewarding student life in BITS and hope that you will be in your good deeds for enhancing the prestige of this Institution.</p>
+        </div>
+            <div class="quick">
+               <ul>
+                   <li><a href="visionandmission.html">About Us</a></li>
+    <li><a href="visionandmission.html" >Vision and Mission</a></li>
+            <li><a href="chairman.html" >Chairman</a></li>
+        <li><a href="principal.html" class="active">Principal</a></li>
+                   <li><a href="naac.pdf">NAAC</a></li>
+               </ul>
+            </div>
+        </section>
+    </body>
+    <style>
+        .quick 
+        {
+            margin-top: 58px;
+            margin-right: 40px;
+            float: right;
+            margin-left: -40px;
+            border: 1px solid #333;
+            width: 400px;
+            text-align: center;
+        }
+        .quick ul li{
+            list-style: none;
+        }
+        .quick ul li a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #a7a7a7;
+        }
+        .quick ul li  .active{
+            background: green;
+            color: #fff;
+        }
+        .quick ul li a:hover{
+            background: green;
+            color: #fff;
+        }
+        .vision{
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+        .vision1 .img1{
+            float: left;
+            margin-right: 20px;
+        }
+        .vision1 .img1 img{
+            width: 300px;
+            height: 300px;
+        }
+        .vision1 .img1 .name{
+            text-align: center;
+            font-family: sans-serif;
+            
+        }
+        .vision1{
+           width: 700px;
+            border: 1px solid #333;
+            margin: 60px -20px;
+            padding: 17px;
+            float: left;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .vision1 .line{
+            padding: 10px;
+            font-family: sans-serif;
+            line-height: 28px;
+        }
+        .vision1 .orange{
+            color: lightcoral;
+            font-family: sans-serif;
+            font-size: 22px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+        .main
+        {
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+        .main .img{
+            float: left;
+        }
+        .img img{
+            margin-left: -6px;
+            width: 600px;
+            height: 400px;
+        }
+        .about{
+            border: 1px solid #333;
+            width: 560px;
+            float: right;
+        }
+        .about h1{
+            margin: 20px;
+            text-align: center;
+        }
+        .about p{
+            margin: 20px;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 28px;  
+        }
+        .active{
+            background: #000;
+        }
+    </style>
+</html>

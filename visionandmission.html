@@ -1,0 +1,263 @@
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive navigation bar</title>  
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+    <style>
+       *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background: #fff;
+            background-size: cover;
+        }
+        header{
+            position: relative;
+            max-width: 1200px;
+            background: #a7a7a7;
+            margin: 15px auto;
+            border: 1px solid #333;
+            align-content: center;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            position: relative;
+            float: left;
+        }
+        nav ul li ul{
+            position: absolute;
+            left: 0;
+            top: 102%;
+            background: #a7a7a7;
+            display: none;
+        }
+        nav ul li ul li{
+            width: 150px;
+            border-bottom: 1px dotted #fff;
+            position: relative;
+        }
+        nav ul li:hover > ul{
+            display: block;
+            color: #fff;
+        }
+        nav ul ul ul{
+            top: 0;
+            left: 100%;
+        }
+        
+        nav ul li a{
+            display: block;
+            text-transform: capitalize;
+            text-decoration:none;
+            font-size: 14px;
+            line-height: 12px;
+            transition:0.1s;
+             color: #fff;
+            text-align: center;
+            padding: 15px 12px;
+        }
+        nav ul li a:hover{
+            background: #000;
+            color:#fff;
+        }
+        .clear{
+            clear: both;
+        }
+        
+        img
+        {
+            width: 70px;
+            margin-left: 30px;
+        }
+        .al
+        {
+        float: right;
+            margin: 10px 70px;
+        }
+        .al a
+        {
+           text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin-left: 1px;
+            font-size: 12px;
+            background: #333;
+        }
+        #logo
+        {
+            width: 300px;
+            
+        }
+        .box40{
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+    </style>
+    <body><br>
+        <div class="box40">
+       <a href="naac.pdf"><img src="NAAC_LOGO.png"></a>
+       <a href="nbacertificate.pdf"><img src="download.png"></a>
+       <a href="#" ><img src="images.png" id="logo"></a>
+        <div class="al">
+        <a href="https://balaji.winnou.net/">onedu</a>
+        <a href="practise1.php">admin login</a>    
+        <a href="lecturerhome.php">staff login</a>
+        <a href="studenthome.php">student login</a>
+            </div>
+            </div>
+       <header>
+           <div class="toggle"></div>
+           <nav>
+              <ul>
+<li><a href="index.php">home</a></li>
+<li><a href="#" class="active">About</a>
+   <ul>
+    <li><a href="visionandmission.html">vision & mission</a></li>
+    <li><a href="chairman.html">chairman</a></li>
+    <li><a href="principal.html">principal</a></li>
+    <li><a href="naac.pdf">naac</a></li>
+    <li><a href="nbacertificate.pdf">nba</a></li>
+   </ul>                  
+</li>
+
+<li><a href="naac.pdf">naac</a></li>
+<li><a href="nbacertificate.pdf">nba</a></li>
+
+<li><a href="achievements.php">Achievements</a></li>
+<li><a href="viewingplacement.php">placements</a></li>
+<li><a href="#">contact us</a></li>
+
+               </ul>
+           </nav>
+           <div class="clear"></div>
+        </header>
+        <section class="main">
+            <div class="img">
+             <img src="main2.jpg">
+            </div>
+            <div class="about">
+                <h1>About Us</h1>
+              <p>Education is all about creating an environment of academic freedom, where bright minds meet,discover and learn.
+<br>
+Balaji Institute of Technology & Science is the one of the best Engineering college in warangal district, popularly known as BITS, was established by Maheshwara Educational Society in 2001 at Laknepally Village near Narsampet beside Warangal-Narsampet Main Road in an area of 35 acres with an in take of 180.<br> The place is well connected by road and train and is only 20 minutes drive from Warangal. <br>Presently the college offers B.Tech courses in EEE, ME, ECE, CIVIL & CSE with an intake of 660 besides MBA with an intake of 60. </p>             
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="vision">
+        <div class="vision1">
+        <span class="orange">Vision</span><br>
+<p class="line">To be a centre for excellence in preparing the graduates professionally committed, intellectually adept and ethically balanced with high standards by imparting quality education with international standards to excel in their career to meet the challenges of the modern world and adapt to the technologically changing environment.</p>
+<span class="orange">Mission</span><br>
+<p class="line">M1: To strive hard to produce technically trained human resources to serve the present and future global needs by providing quality education.
+<br>
+M2: To provide value based training in technological advancements and employment opportunities to students by strengthening institutes interaction with industries.
+<br>
+    M3: To disseminate knowledge of need based technical education, innovative learning and research & development with holistic approach. </p>   
+        </div>
+            <div class="quick">
+               <ul>
+                   <li><a href="visionandmission.html">About Us</a></li>
+                 <li><a href="visionandmission.html" class="active">Vision and Mission</a></li>
+                   <li><a href="chairman.html">Chairman</a></li>
+                   <li><a href="principal.html">Principal</a></li>
+                   <li><a href="#">NAAC</a></li>
+               </ul>
+            </div>
+        </section>
+    </body>
+    <style>
+        .quick 
+        {
+            margin-top: 58px;
+            margin-right: 40px;
+            float: right;
+            margin-left: -40px;
+            border: 1px solid #333;
+            width: 400px;
+            text-align: center;
+        }
+        .quick ul li{
+            list-style: none;
+        }
+        .quick ul li a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #a7a7a7;
+        }
+        .quick ul li  .active{
+            background: green;
+            color: #fff;
+        }
+        .quick ul li a:hover{
+            background: green;
+            color: #fff;
+        }
+        .vision{
+            max-width: 1200px;
+            margin: 5px auto;
+            padding: 20px;
+        }
+        .vision1{
+           width: 700px;
+            border: 1px solid #333;
+            margin-top: 10px;
+            margin-left: -2px;
+            padding: 17px;
+            float: left;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .vision1 .line{
+            padding: 10px;
+            font-family: sans-serif;
+            line-height: 28px;
+        }
+        .vision1 .orange{
+            color: lightcoral;
+            font-family: sans-serif;
+            font-size: 22px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+        .main{
+            max-width: 1200px;
+            margin: 5px auto;
+        }
+        .main .img{
+            margin: 5px auto;
+            float: left;
+        }
+        .img img{
+            width: 500px;
+            height: 400px;
+        }
+        .about{
+            border: 1px solid #333;
+            width: 560px;
+            float: right;
+            margin: 5px auto;
+        }
+        .about h1{
+            margin: 20px;
+            text-align: center;
+        }
+        .about p{
+            margin: 20px;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 28px;  
+        }
+        .active{
+            background: #000;
+        }
+    </style>
+</html>
